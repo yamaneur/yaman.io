@@ -58,7 +58,7 @@ export default function Navbar() {
           className="hidden md:inline-flex items-center gap-2 bg-black text-white px-4 py-2 text-sm font-medium rounded-full hover:bg-[#333] transition-colors min-h-[44px]"
         >
           <span>✦</span>
-          <span>اسأل الذكاء الاصطناعي</span>
+          <span>تحدّث مع يمان AI</span>
         </a>
 
         {/* Hamburger (RTL: right side) */}
@@ -111,7 +111,7 @@ export default function Navbar() {
               className="block w-full text-center bg-black text-white py-3 rounded-full font-medium text-sm min-h-[44px] flex items-center justify-center gap-2"
             >
               <span>✦</span>
-              <span>اسأل الذكاء الاصطناعي عني</span>
+              <span>تحدّث مع يمان AI</span>
             </a>
           </li>
         </ul>

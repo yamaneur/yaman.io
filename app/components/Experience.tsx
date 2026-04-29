@@ -7,7 +7,7 @@ const roles = [
     id: "thmanyah",
     company: "ثمانية",
     companyEn: "Thmanyah",
-    role: "رئيس المنتجات",
+    role: "رئيس قسم المنتجات",
     period: "٢٠٢٥ – الآن",
     highlights: [
       "قاد نمو المنصة من ٥٠٠ ألف إلى ٣ مليون مستخدم في شهرين",
@@ -21,7 +21,7 @@ const roles = [
     id: "landscape",
     company: "لاندسكيب",
     companyEn: "Landscape",
-    role: "مؤسس مشارك ومدير الأعمال التجارية",
+    role: "شريك مؤسس",
     period: "٢٠٢٤ – الآن",
     highlights: [
       "يقود الابتكار بالذكاء الاصطناعي مع عملاء من المؤسسات والمكاتب العائلية",
@@ -35,7 +35,7 @@ const roles = [
     id: "webook",
     company: "ويبوك",
     companyEn: "Webook",
-    role: "مدير المنتجات",
+    role: "رئيس قسم المنتجات",
     period: "٢٠٢٢ – ٢٠٢٥",
     highlights: [
       "قاد مبادرات لإنشاء والتحقق من مصادر إيرادات وقطاعات جديدة",
@@ -46,24 +46,10 @@ const roles = [
       "ويبوك كانت حوضاً لاختبار النظريات في الحجم. عملنا على بناء طبقات إيرادات متعددة — منتجات B2B، شراكات مؤسسية مع روح السعودية ونسك — وكان التحدي الحقيقي هو الموازنة بين النمو السريع وبناء أساس مستدام. الوصول إلى ٢ مليار ريال في إجمالي قيمة المعاملات كان علامة فارقة تتحدث عن نفسها.",
   },
   {
-    id: "halayalla",
-    company: "HalaYalla",
-    companyEn: "HalaYalla",
-    role: "مدير منتجات أول",
-    period: "٢٠٢١ – ٢٠٢٢",
-    highlights: [
-      "أسس وحسّن محفظة B2B: موردون، وموزعون، وحلول العلامة البيضاء",
-      "بنى شراكات مع روح السعودية ونسك (ابتكار التأشيرة الموحدة)",
-      "وضع نماذج عمل B2B2C قابلة للتوسع في قطاع السياحة والترفيه",
-    ],
-    aiContext:
-      "في HalaYalla تعلمت كيف تبني منظومة B2B معقدة من الصفر. لم يكن الأمر مجرد إضافة قناة مبيعات — كان إعادة تصور كيف يمكن لشركة ترفيه أن تخدم مؤسسات مثل روح السعودية بنموذج يختلف جذرياً عن نموذج B2C الأصلي.",
-  },
-  {
     id: "uxbert",
     company: "UXBERT Labs",
     companyEn: "UXBERT Labs",
-    role: "قائد مشاريع",
+    role: "قائد فريق الاستكشاف",
     period: "٢٠١٩ – ٢٠٢١",
     highlights: [
       "قاد تطوير المنتجات الداخلية وبناء المشاريع المؤسسية",
@@ -72,20 +58,6 @@ const roles = [
     ],
     aiContext:
       "UXBERT كانت مدرستي في بناء المنتجات الحقيقية. عملت بالتوازي على مشاريع متعددة في مراحل مختلفة — من الفكرة إلى الإطلاق — وهذا علّمني كيف أفكر في الأولويات والمقايضات عندما تكون الموارد محدودة والتوقعات عالية.",
-  },
-  {
-    id: "tunuf",
-    company: "تنوف",
-    companyEn: "Tunuf",
-    role: "مدير منتجات",
-    period: "٢٠١٧ – ٢٠١٩",
-    highlights: [
-      "أدار تطوير المنتجات الداخلية وتنفيذ المشاريع",
-      "بنى عمليات المنتج من الصفر في بيئة ناشئة",
-      "اكتسب الأساس التقني الذي يدعم عمله حتى اليوم",
-    ],
-    aiContext:
-      "تنوف كانت نقطة البداية الحقيقية. تعلمت ما يعنيه أن تكون مدير منتجات في بيئة ناشئة سعودية مع فريق صغير وتوقعات كبيرة. هذه الخبرة المبكرة شكّلت فهمي لكيفية بناء المنتجات التي تحل مشاكل حقيقية.",
   },
 ];
 
@@ -96,7 +68,6 @@ function RoleCard({ role }: { role: typeof roles[0] }) {
     <article className="border border-[#E5E5E5] rounded-2xl p-6 hover:bg-[#F5F5F5] transition-colors">
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
         <div className="flex items-center gap-3">
-          {/* Logo placeholder */}
           <div className="w-10 h-10 rounded-lg bg-[#E5E5E5] flex items-center justify-center shrink-0 text-xs font-bold text-[#666]">
             {role.companyEn.charAt(0)}
           </div>
@@ -140,12 +111,9 @@ function RoleCard({ role }: { role: typeof roles[0] }) {
         </svg>
       </button>
 
-      {/* AI Context */}
       <div
         id={`ai-context-${role.id}`}
-        className={`overflow-hidden transition-all duration-300 ${
-          expanded ? "max-h-64 mt-4" : "max-h-0"
-        }`}
+        className={`overflow-hidden transition-all duration-300 ${expanded ? "max-h-64 mt-4" : "max-h-0"}`}
       >
         <div className="bg-white border border-[#E5E5E5] rounded-xl p-4 text-sm text-[#444] leading-[1.9]">
           <p className="text-[10px] font-bold text-[#999] uppercase tracking-wider mb-2">
@@ -162,20 +130,18 @@ export default function Experience() {
   return (
     <section id="experience" className="py-20 lg:py-28" aria-labelledby="experience-heading">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="mb-12 max-w-2xl">
           <h2
             id="experience-heading"
             className="font-serif-display font-black text-3xl sm:text-4xl mb-3"
           >
-            الخبرات
+            رحلة 10 سنوات في ريادة الأعمال
           </h2>
           <p className="text-[#666] text-base leading-relaxed">
             كل دور يتضمن سياقاً قابلاً للاستعلام — القصة الحقيقية خلف النقاط.
           </p>
         </div>
 
-        {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {roles.map((role) => (
             <RoleCard key={role.id} role={role} />

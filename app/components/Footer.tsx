@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="font-serif-display font-black text-xl mb-1">يمان العرضي</p>
-            <p className="text-[#666] text-sm">قائد المنتجات وتحول الذكاء الاصطناعي</p>
+            <p className="text-[#666] text-sm">رائد أعمال، قيادي منتجات، مستثمر ملائكي</p>
           </div>
 
           {/* Links */}
