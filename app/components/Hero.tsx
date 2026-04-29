@@ -83,7 +83,7 @@ export default function Hero() {
             id="hero-name"
             className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] mb-4"
           >
-            يمان العردي
+            يمان العرضي
           </h1>
 
           {/* Title */}

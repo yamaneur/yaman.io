@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "يمان العردي — قائد المنتجات وتحول الذكاء الاصطناعي",
+  title: "يمان العرضي — قائد المنتجات وتحول الذكاء الاصطناعي",
   description:
     "قائد منتجات ومستشار تحول ذكاء اصطناعي يساعد الشركات في الخليج على بناء منتجات مستقبلية. مؤسس مشارك في لاندسكيب ورئيس المنتجات في ثمانية",
-  keywords: "يمان العردي، قائد منتجات، ذكاء اصطناعي، تحول رقمي، السعودية، ثمانية، لاندسكيب",
+  keywords: "يمان العرضي، قائد منتجات، ذكاء اصطناعي، تحول رقمي، السعودية، ثمانية، لاندسكيب",
   openGraph: {
-    title: "يمان العردي — قائد المنتجات وتحول الذكاء الاصطناعي",
+    title: "يمان العرضي — قائد المنتجات وتحول الذكاء الاصطناعي",
     description:
       "قائد منتجات ومستشار تحول ذكاء اصطناعي يساعد الشركات في الخليج على بناء منتجات مستقبلية.",
     locale: "ar_SA",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   other: {
     "og:profile:first_name": "يمان",
-    "og:profile:last_name": "العردي",
+    "og:profile:last_name": "العرضي",
   },
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "يمان العردي",
+              name: "يمان العرضي",
               alternateName: "Yaman Alordi",
               jobTitle: "قائد المنتجات وتحول الذكاء الاصطناعي",
               worksFor: [

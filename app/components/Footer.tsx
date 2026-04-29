@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           {/* Brand */}
           <div>
-            <p className="font-serif-display font-black text-xl mb-1">يمان العردي</p>
+            <p className="font-serif-display font-black text-xl mb-1">يمان العرضي</p>
             <p className="text-[#666] text-sm">قائد المنتجات وتحول الذكاء الاصطناعي</p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-[#E5E5E5] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#666]">
           <p>هذه المحفظة تستخدم الذكاء الاصطناعي لتمثيلي — وليس لاستبدالي.</p>
-          <p>© ٢٠٢٦ يمان العردي</p>
+          <p>© ٢٠٢٦ يمان العرضي</p>
         </div>
       </div>
     </footer>

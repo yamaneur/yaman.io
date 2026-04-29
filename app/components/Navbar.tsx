@@ -33,9 +33,9 @@ export default function Navbar() {
         <a
           href="#"
           className="font-serif-display font-black text-lg tracking-tight hover:opacity-70 transition-opacity"
-          aria-label="يمان العردي - الرئيسية"
+          aria-label="يمان العرضي - الرئيسية"
         >
-          يمان العردي
+          يمان العرضي
         </a>
 
         {/* Desktop Nav */}
