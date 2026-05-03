@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "الخبرات", href: "#experience" },
-  { label: "تقييم الملاءمة", href: "#fit" },
-  { label: "المدونة", href: "#blog" },
-  { label: "البودكاست", href: "#podcast" },
+  { label: "كيف أعمل", href: "#how-i-work" },
+  { label: "الدليل", href: "#proof" },
+  { label: "المقالات", href: "#writing" },
   { label: "اسأل الذكاء الاصطناعي", href: "#ask-ai" },
 ];
 
@@ -29,10 +28,10 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo / Name */}
+        {/* Logo */}
         <a
           href="#"
-          className="font-serif-display font-black text-lg tracking-tight hover:opacity-70 transition-opacity"
+          className="font-serif-display font-black text-lg hover:opacity-70 transition-opacity"
           aria-label="يمان العرضي - الرئيسية"
         >
           يمان العرضي
@@ -42,10 +41,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-6 font-sans-arabic font-medium text-sm">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="hover:opacity-60 transition-opacity py-1"
-              >
+              <a href={link.href} className="hover:opacity-60 transition-opacity py-1">
                 {link.label}
               </a>
             </li>
@@ -54,44 +50,30 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="#ask-ai"
-          className="hidden md:inline-flex items-center gap-2 bg-black text-white px-4 py-2 text-sm font-medium rounded-full hover:bg-[#333] transition-colors min-h-[44px]"
+          href="#contact"
+          className="hidden md:inline-flex items-center gap-2 bg-black text-white px-5 py-2 text-sm font-medium rounded-full hover:bg-[#333] transition-colors min-h-[44px]"
         >
-          <span>✦</span>
-          <span>تحدّث مع يمان AI</span>
+          <span>تحدث معي</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
         </a>
 
-        {/* Hamburger (RTL: right side) */}
+        {/* Hamburger */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex flex-col gap-1.5 p-2 min-w-[44px] min-h-[44px] items-center justify-center"
           aria-label={open ? "إغلاق القائمة" : "فتح القائمة"}
           aria-expanded={open}
         >
-          <span
-            className={`block w-5 h-0.5 bg-black transition-all duration-300 ${
-              open ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-black transition-all duration-300 ${
-              open ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-black transition-all duration-300 ${
-              open ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
+          <span className={`block w-5 h-0.5 bg-black transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-black transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-black transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </nav>
 
       {/* Mobile Drawer */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          open ? "max-h-96 border-b border-[#E5E5E5]" : "max-h-0"
-        } bg-white`}
-      >
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-96 border-b border-[#E5E5E5]" : "max-h-0"} bg-white`}>
         <ul className="px-4 pb-4 flex flex-col gap-1">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -106,12 +88,14 @@ export default function Navbar() {
           ))}
           <li className="pt-2">
             <a
-              href="#ask-ai"
+              href="#contact"
               onClick={closeMenu}
               className="block w-full text-center bg-black text-white py-3 rounded-full font-medium text-sm min-h-[44px] flex items-center justify-center gap-2"
             >
-              <span>✦</span>
-              <span>تحدّث مع يمان AI</span>
+              <span>تحدث معي</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </a>
           </li>
         </ul>

@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Experience from "./components/Experience";
-import FitAssessment from "./components/FitAssessment";
-import Blog from "./components/Blog";
-import Podcast from "./components/Podcast";
-import Participations from "./components/Participations";
+import Problem from "./components/Problem";
+import HowIWork from "./components/HowIWork";
+import Proof from "./components/Proof";
+import Writing from "./components/Writing";
+import Media from "./components/Media";
 import AskAI from "./components/AskAI";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -14,12 +15,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Experience />
-        <FitAssessment />
-        <Blog />
-        <Podcast />
-        <Participations />
+        <Problem />
+        <HowIWork />
+        <Proof />
+        <Writing />
+        <Media />
         <AskAI />
+        <Contact />
       </main>
       <Footer />
     </>

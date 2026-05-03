@@ -6,37 +6,31 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="font-serif-display font-black text-xl mb-1">يمان العرضي</p>
-            <p className="text-[#666] text-sm">رائد أعمال، قيادي منتجات، مستثمر ملائكي</p>
+            <p className="text-[#666] text-sm leading-relaxed max-w-xs">
+              أساعد المؤسسين على اختبار أفكارهم بأقل جهد — وأفتح لهم الأبواب الصح
+            </p>
           </div>
 
           {/* Links */}
           <nav aria-label="روابط التذييل">
             <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
               <li>
-                <a
-                  href="https://linkedin.com/in/yamanalordi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center"
-                >
+                <a href="https://www.linkedin.com/in/yamaneur/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center">
                   لينكد إن
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:hello@yaman.io"
-                  className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center"
-                >
+                <a href="https://x.com/yamaneur" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center">
+                  X
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@yaman.io" className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center">
                   البريد الإلكتروني
                 </a>
               </li>
               <li>
-                <a
-                  href="https://yaman.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center"
-                >
+                <a href="https://yaman.io" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center">
                   المدونة
                 </a>
               </li>
@@ -45,8 +39,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-[#E5E5E5] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#666]">
-          <p>هذه المحفظة تستخدم الذكاء الاصطناعي لتمثيلي — وليس لاستبدالي.</p>
-          <p>© ٢٠٢٦ يمان العرضي</p>
+          <p>هذا الموقع يستخدم الذكاء الاصطناعي للتواصل — وليس لاستبدال المحادثة الحقيقية.</p>
+          <p>© 2026 يمان العرضي</p>
         </div>
       </div>
     </footer>

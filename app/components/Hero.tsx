@@ -53,7 +53,7 @@ export default function Hero() {
       ([entry]) => {
         if (entry.isIntersecting) {
           el.querySelectorAll(".stagger-item").forEach((child, i) => {
-            (child as HTMLElement).style.animationDelay = `${i * 100}ms`;
+            (child as HTMLElement).style.animationDelay = `${i * 120}ms`;
             child.classList.add("animate-fade-slide-up");
           });
           observer.disconnect();
@@ -73,51 +73,48 @@ export default function Hero() {
       aria-labelledby="hero-name"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div className="max-w-3xl">
+        <div className="max-w-2xl">
+          {/* Availability badge */}
+          <div className="stagger-item opacity-0 inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-4 py-2 text-sm font-medium text-[#666] mb-8">
+            <span className="w-2 h-2 rounded-full bg-black shrink-0" />
+            <span>متاح لعدد محدود من المؤسسين</span>
+          </div>
+
           {/* Name */}
           <h1
             id="hero-name"
-            className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] mb-4"
+            className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] mb-6"
           >
             يمان العرضي
           </h1>
 
-          {/* Title */}
-          <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#333] mb-6 leading-tight">
-            رائد أعمال، قيادي منتجات، مستثمر ملائكي
-          </p>
-
-          {/* Bio */}
-          <p className="stagger-item opacity-0 text-base sm:text-lg text-[#444] mb-8 max-w-xl leading-[1.9]">
-            أساعد الشركات على بناء منتجات مستقبلية من خلال دمج الذكاء الاصطناعي في
-            الاستراتيجية والعمليات والمشاريع
+          {/* POV Line */}
+          <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] mb-10 leading-[1.5]">
+            أساعد المؤسسين على اختبار أفكارهم بأقل جهد — وأفتح لهم الأبواب الصح
           </p>
 
           {/* CTA */}
           <div className="stagger-item opacity-0 flex flex-col sm:flex-row items-start gap-4 mb-12">
             <a
-              href="#ask-ai"
-              className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-[#222] transition-colors min-h-[44px] relative"
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-black text-white px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#222] transition-colors min-h-[44px]"
             >
               <span>✦</span>
-              <span>تحدّث مع يمان AI</span>
-              <span className="absolute -top-2 -start-2 bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded-full border-2 border-white">
-                جديد
-              </span>
+              <span>تحدث معي</span>
             </a>
             <a
-              href="#experience"
-              className="inline-flex items-center gap-2 border border-[#E5E5E5] px-6 py-3 rounded-full font-medium hover:bg-[#F5F5F5] transition-colors min-h-[44px]"
+              href="#how-i-work"
+              className="inline-flex items-center gap-2 border border-[#E5E5E5] px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#F5F5F5] transition-colors min-h-[44px]"
             >
-              <span>الخبرات</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
+              <span>كيف أعمل</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </a>
           </div>
 
           {/* Social links */}
-          <div className="stagger-item opacity-0 flex flex-wrap gap-4">
+          <div className="stagger-item opacity-0 flex flex-wrap gap-5">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
