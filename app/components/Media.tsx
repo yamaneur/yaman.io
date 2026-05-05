@@ -1,75 +1,86 @@
-const mediaItems = [
+import Section from "./Section";
+import SectionHeader from "./SectionHeader";
+
+const mediaCards = [
   {
     name: "العربية أعمال",
     href: "https://mobile.x.com/yamaneur/status/1814009433837756922",
-    initials: "AR",
-  },
-  {
-    name: "هارفارد بزنس ريفيو العربية",
-    href: "https://www.linkedin.com/in/yamaneur/",
-    initials: "HBR",
+    logo: "/images/media/al-arabiya.svg",
+    photo: "/images/media/alarabia.jpg",
   },
   {
     name: "سوالف بزنس",
     href: "https://www.youtube.com/watch?v=PfTqG0vkVqo",
-    initials: "سب",
+    logo: "/images/media/swalif.svg",
+    photo: "/images/media/swalif-business.jpg",
   },
   {
     name: "ذا ستيج",
     href: "https://www.youtube.com/watch?v=sxcUxMjzlvE",
-    initials: "TS",
-  },
-  {
-    name: "مختلف",
-    href: "https://www.youtube.com/watch?v=Q2010p10H9c",
-    initials: "مخ",
-  },
-  {
-    name: "صفر لواحد",
-    href: "#",
-    initials: "٠١",
+    logo: "/images/media/the-stage.svg",
+    photo: "/images/media/the-stage.jpg",
   },
 ];
 
 export default function Media() {
   return (
-    <section id="media" className="py-20 lg:py-28 border-t border-[#E5E5E5]" aria-labelledby="media-heading">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 id="media-heading" className="font-serif-display font-black text-3xl sm:text-4xl mb-12">
-          ظهوراتي الإعلامية
-        </h2>
+    <Section id="media" fullWidth ariaLabelledBy="media-heading">
+      <SectionHeader
+        id="media-heading"
+        eyebrow="الظهور"
+        title="ظهوراتي الإعلامية"
+        description="مقابلات، بودكاست، وكتابات — حيث أشارك ما أتعلمه مع المؤسسين."
+      />
 
-        {/* Logo row — horizontal scroll on mobile, wrap on desktop */}
-        <div
-          className="flex gap-4 overflow-x-auto pb-2 md:flex-wrap md:overflow-visible snap-x-mandatory"
-          role="list"
-          aria-label="وسائل الإعلام"
-        >
-          {mediaItems.map((item) => (
-            <div key={item.name} role="listitem" className="snap-start shrink-0">
-              <a
-                href={item.href}
-                target={item.href !== "#" ? "_blank" : undefined}
-                rel={item.href !== "#" ? "noopener noreferrer" : undefined}
-                className="group flex flex-col items-center justify-center border border-[#E5E5E5] rounded-2xl w-36 h-24 hover:border-black hover:bg-[#F5F5F5] transition-all"
-                aria-label={item.name}
-              >
-                {/* Logo placeholder — replace with <img> when logo files are provided */}
-                <span className="font-serif-display font-black text-lg text-[#999] group-hover:text-black transition-colors">
-                  {item.initials}
-                </span>
-                <span className="text-[10px] text-[#BBB] group-hover:text-[#666] transition-colors mt-1 text-center px-2 leading-tight">
-                  {item.name}
-                </span>
-              </a>
-            </div>
-          ))}
-        </div>
-
-        <p className="mt-6 text-xs text-[#999]">
-          ضع مؤشر الفأرة على الشعار للانتقال إلى الحلقة أو المقال
-        </p>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-3 gap-4"
+        role="list"
+        aria-label="وسائل الإعلام"
+      >
+        {mediaCards.map((item) => (
+          <div key={item.name} role="listitem">
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-2xl overflow-hidden border border-[#E5E5E5] hover:border-black transition-all"
+              aria-label={item.name}
+            >
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#F5F5F5]">
+                <img
+                  src={item.photo}
+                  alt={item.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-between px-4 py-3 border-t border-[#E5E5E5] group-hover:border-black transition-colors">
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  loading="lazy"
+                  className="h-6 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-30 group-hover:opacity-100 transition-opacity"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
-    </section>
+    </Section>
   );
 }

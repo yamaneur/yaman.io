@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <rect width="400" height="240" fill="#F5F5F5"/>
+  <polygon points="200,40 360,200 40,200" fill="#E5E5E5"/>
+  <polygon points="200,70 320,200 80,200" fill="#D5D5D5"/>
+  <polygon points="200,100 280,200 120,200" fill="#C5C5C5"/>
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#999" letter-spacing="2">استراتيجية</text>
+</svg>

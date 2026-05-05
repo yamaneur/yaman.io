@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <rect width="400" height="240" fill="#F5F5F5"/>
+  <path d="M80 180 Q80 60 200 60 Q320 60 320 180 Z" fill="none" stroke="#E5E5E5" stroke-width="2"/>
+  <path d="M120 180 Q120 100 200 100 Q280 100 280 180" fill="none" stroke="#D5D5D5" stroke-width="2"/>
+  <circle cx="200" cy="145" r="20" fill="#C5C5C5" opacity="0.5"/>
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#999" letter-spacing="2">السوق</text>
+</svg>
