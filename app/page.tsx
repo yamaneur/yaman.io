@@ -4,6 +4,7 @@ import Problem from "./components/Problem";
 import HowIWork from "./components/HowIWork";
 import Proof from "./components/Proof";
 import Writing from "./components/Writing";
+import BooksAndTools from "./components/BooksAndTools";
 import Media from "./components/Media";
 import Workshops from "./components/Workshops";
 import AskAI from "./components/AskAI";
@@ -20,6 +21,7 @@ export default function Home() {
         <HowIWork />
         <Proof />
         <Writing />
+        <BooksAndTools />
         <Media />
         <Workshops />
         <AskAI />
