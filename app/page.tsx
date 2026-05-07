@@ -1,14 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Problem from "./components/Problem";
+import Logos from "./components/Logos";
 import HowIWork from "./components/HowIWork";
-import Proof from "./components/Proof";
-import Writing from "./components/Writing";
 import BooksAndTools from "./components/BooksAndTools";
+import Writing from "./components/Writing";
 import Media from "./components/Media";
 import Workshops from "./components/Workshops";
-import AskAI from "./components/AskAI";
-import Contact from "./components/Contact";
+import FloatingChat from "./components/FloatingChat";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -17,17 +15,15 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Problem />
+        <Logos />
         <HowIWork />
-        <Proof />
-        <Writing />
         <BooksAndTools />
+        <Writing />
         <Media />
         <Workshops />
-        <AskAI />
-        <Contact />
       </main>
       <Footer />
+      <FloatingChat />
     </>
   );
 }

@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "كيف أعمل", href: "#how-i-work" },
-  { label: "الدليل", href: "#proof" },
+  { label: "كيف أساعد", href: "#how-i-work" },
   { label: "المقالات", href: "#writing" },
-  { label: "اسأل الذكاء الاصطناعي", href: "#ask-ai" },
+  { label: "يمان بوت", href: "#ask-ai" },
 ];
 
 export default function Navbar() {
@@ -50,10 +49,10 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="#contact"
+          href="#ask-ai"
           className="hidden md:inline-flex items-center gap-2 bg-black text-white px-5 py-2 text-sm font-medium rounded-full hover:bg-[#333] transition-colors min-h-[44px]"
         >
-          <span>تحدث معي</span>
+          <span>يمان بوت</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
@@ -88,11 +87,11 @@ export default function Navbar() {
           ))}
           <li className="pt-2">
             <a
-              href="#contact"
+              href="#ask-ai"
               onClick={closeMenu}
               className="block w-full text-center bg-black text-white py-3 rounded-full font-medium text-sm min-h-[44px] flex items-center justify-center gap-2"
             >
-              <span>تحدث معي</span>
+              <span>يمان بوت</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>

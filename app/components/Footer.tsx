@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
     <footer className="border-t border-[#E5E5E5] bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 lg:py-16">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           {/* Brand */}
           <div>
             <p className="font-serif-display font-black text-xl mb-1">يمان العرضي</p>
             <p className="text-[#666] text-sm leading-relaxed max-w-xs">
-              أساعد المؤسسين على اختبار أفكارهم بأقل جهد — وأفتح لهم الأبواب الصح
+              أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل بأقل جهد وتكلفة
             </p>
           </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="https://x.com/yamaneur" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity min-h-[44px] inline-flex items-center">
-                  X
+                  إكس
                 </a>
               </li>
               <li>
@@ -38,9 +38,8 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-[#E5E5E5] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#666]">
-          <p>هذا الموقع يستخدم الذكاء الاصطناعي للتواصل — وليس لاستبدال المحادثة الحقيقية.</p>
-          <p>© 2026 يمان العرضي</p>
+        <div className="mt-10 pt-6 border-t border-[#E5E5E5]">
+          <p className="text-xs text-[#666] text-start">© 2026 يمان العرضي</p>
         </div>
       </div>
     </footer>

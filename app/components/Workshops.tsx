@@ -20,9 +20,8 @@ export default function Workshops() {
     <Section id="workshops" fullWidth ariaLabelledBy="workshops-heading">
       <SectionHeader
         id="workshops-heading"
-        eyebrow="التمكين"
-        title="تمكين المؤسسين"
-        description="ورش عمل وجلسات تدريبية مع المؤسسين في مراحل التأسيس المبكرة."
+        title="من الذاكرة"
+        description="ورش عمل وإرشاد وممارسة مع المؤسسين في مراحل التأسيس المبكرة."
       />
 
       <div className="columns-2 sm:columns-3 gap-3 space-y-3">

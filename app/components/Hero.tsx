@@ -13,7 +13,7 @@ const socialLinks = [
     ),
   },
   {
-    label: "X",
+    label: "إكس",
     href: "https://x.com/yamaneur",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -69,64 +69,71 @@ export default function Hero() {
     <section
       id="hero"
       ref={heroRef}
-      className="min-h-screen flex items-center pt-16"
+      className="flex items-center pt-16"
       aria-labelledby="hero-name"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div className="max-w-2xl">
-          {/* Availability badge */}
-          <div className="stagger-item opacity-0 inline-flex items-center gap-2 border border-[#E5E5E5] rounded-full px-4 py-2 text-sm font-medium text-[#666] mb-8">
-            <span className="w-2 h-2 rounded-full bg-black shrink-0" />
-            <span>متاح لعدد محدود من المؤسسين</span>
-          </div>
-
-          {/* Name */}
-          <h1
-            id="hero-name"
-            className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] mb-6"
-          >
-            يمان العرضي
-          </h1>
-
-          {/* POV Line */}
-          <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] mb-10 leading-[1.5]">
-            أساعد المؤسسين على اختبار أفكارهم بأقل جهد — وأفتح لهم الأبواب الصح
-          </p>
-
-          {/* CTA */}
-          <div className="stagger-item opacity-0 flex flex-col sm:flex-row items-start gap-4 mb-12">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 bg-black text-white px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#222] transition-colors min-h-[44px]"
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
+          <div className="max-w-2xl space-y-8 lg:space-y-10">
+            {/* Name */}
+            <h1
+              id="hero-name"
+              className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1]"
             >
-              <span>✦</span>
-              <span>تحدث معي</span>
-            </a>
-            <a
-              href="#how-i-work"
-              className="inline-flex items-center gap-2 border border-[#E5E5E5] px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#F5F5F5] transition-colors min-h-[44px]"
-            >
-              <span>كيف أعمل</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
+              يمــان العرضــي
+            </h1>
 
-          {/* Social links */}
-          <div className="stagger-item opacity-0 flex flex-wrap gap-5">
-            {socialLinks.map((social) => (
+            {/* POV Line */}
+            <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] leading-[1.5]">
+              أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل
+            </p>
+
+            {/* CTA */}
+            <div className="stagger-item opacity-0 flex flex-col sm:flex-row items-start gap-4">
               <a
-                key={social.label}
-                href={social.href}
-                target={social.href.startsWith("http") ? "_blank" : undefined}
-                rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-2 text-sm text-[#666] hover:text-black transition-colors min-h-[44px]"
+                href="#ask-ai"
+                className="inline-flex items-center gap-2 bg-black text-white px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#222] transition-colors min-h-[44px]"
               >
-                {social.icon}
-                <span>{social.label}</span>
+                <span>✦</span>
+                <span>كلّم يمان بوت</span>
               </a>
-            ))}
+              <a
+                href="#how-i-work"
+                className="inline-flex items-center gap-2 border border-[#E5E5E5] px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#F5F5F5] transition-colors min-h-[44px]"
+              >
+                <span>كيف أعمل</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+
+            {/* Social links */}
+            <div className="stagger-item opacity-0 flex flex-wrap gap-x-6 gap-y-2 pt-2">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target={social.href.startsWith("http") ? "_blank" : undefined}
+                  rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="flex items-center gap-2 text-sm text-[#666] hover:text-black transition-colors min-h-[44px]"
+                >
+                  {social.icon}
+                  <span>{social.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Portrait */}
+          <div className="hidden lg:flex stagger-item opacity-0 justify-center">
+            <div className="w-64 xl:w-72 rounded-2xl overflow-hidden border border-[#E5E5E5] bg-[#FAFAFA]">
+              <img
+                src="/images/portrait2.jpg"
+                alt="يمان العرضي"
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
