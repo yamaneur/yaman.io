@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
-  <rect width="400" height="500" fill="#F0F0F0"/>
-  <ellipse cx="200" cy="180" rx="60" ry="65" fill="#E0E0E0"/>
-  <rect x="130" y="250" width="140" height="180" rx="20" fill="#E0E0E0"/>
-  <rect x="155" y="270" width="90" height="20" rx="4" fill="#D0D0D0"/>
-  <rect x="145" y="300" width="110" height="12" rx="3" fill="#D0D0D0"/>
-  <rect x="160" y="320" width="80" height="12" rx="3" fill="#D0D0D0"/>
-  <text x="200" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#999">يمان العرضي</text>
-</svg>
