@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "كيف اشتغل", href: "#how-i-work" },
+  { label: "كيف أشتغل", href: "#how-i-work" },
   { label: "كتب وأدوات", href: "#books-tools" },
   { label: "اللقاءات", href: "#media" },
   { label: "المدونة", href: "https://yaman.io" },

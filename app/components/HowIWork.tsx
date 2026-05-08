@@ -58,7 +58,7 @@ export default function HowIWork() {
     <Section id="how-i-work" fullWidth ariaLabelledBy="how-heading">
       <SectionHeader
         id="how-heading"
-        title="كيف أساعد المؤسسين؟"
+        title="كيف أشتغل مع المؤسسين؟"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
