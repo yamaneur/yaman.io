@@ -78,18 +78,18 @@ export default function Hero() {
             {/* Name */}
             <h1
               id="hero-name"
-              className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1]"
+              className="stagger-item opacity-0 font-serif-display font-black text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] text-right sm:text-start"
             >
               يمــان العرضــي
             </h1>
 
             {/* POV Line */}
-            <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] leading-[1.5]">
+            <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] leading-[1.5] text-right sm:text-start">
               أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل
             </p>
 
             {/* CTA */}
-            <div className="stagger-item opacity-0 flex flex-row items-center gap-2 sm:gap-4">
+            <div className="stagger-item opacity-0 flex flex-row items-center gap-2 sm:gap-4 justify-end sm:justify-start">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-black text-white px-4 py-2.5 sm:px-7 sm:py-3.5 rounded-full font-medium text-sm sm:text-base hover:bg-[#222] transition-colors min-h-[44px] whitespace-nowrap"
@@ -108,7 +108,7 @@ export default function Hero() {
             </div>
 
             {/* Social links */}
-            <div className="stagger-item opacity-0 flex flex-wrap gap-x-6 gap-y-2 pt-2">
+            <div className="stagger-item opacity-0 flex flex-wrap gap-x-6 gap-y-2 pt-2 justify-end sm:justify-start">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
