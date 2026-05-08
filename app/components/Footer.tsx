@@ -5,9 +5,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           {/* Brand */}
           <div>
-            <p className="font-serif-display font-black text-xl mb-1">يمان العرضي</p>
+            <p className="font-serif-display font-black text-xl mb-1">يمــان العرضــي</p>
             <p className="text-[#666] text-sm leading-relaxed max-w-xs">
-              أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل بأقل جهد وتكلفة
+              أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل
             </p>
           </div>
 

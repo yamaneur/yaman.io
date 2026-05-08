@@ -7,7 +7,7 @@ const services = [
   {
     id: "validation",
     title: "التحقق من السوق",
-    description: "أساعدك تختبر فكرتك بأقل جهد وتكلفة — قبل ما تبني أي شيء",
+    description: "أساعدك تختبر مشروعك في السوق مع عملاء حقيقيين",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="8"/>
@@ -19,7 +19,7 @@ const services = [
   {
     id: "clients",
     title: "الوصول للعملاء الأوائل",
-    description: "أفتح لك الأبواب الصح وأوصلك بعملاء محتملين من شبكتي مباشرة",
+    description: "أساعدك توصل لعملاء محتملين تعرض وتحقق معهم",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -32,7 +32,7 @@ const services = [
   {
     id: "partners",
     title: "إيجاد الشركاء المناسبين",
-    description: "أساعدك تلاقي الشريك التقني أو التجاري اللي يكمّل مشروعك",
+    description: "أساعدك تلاقي الشريك التقني أو التجاري اللي يكمّلك",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
@@ -69,18 +69,6 @@ export default function HowIWork() {
         ))}
       </div>
 
-      <div className="mt-10">
-        <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); document.querySelector<HTMLButtonElement>('button[aria-label="كلّم يمان بوت"]')?.click(); }}
-          className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#222] transition-colors min-h-[44px]"
-        >
-          <span>كلّم يمان بوت</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
     </Section>
   );
 }

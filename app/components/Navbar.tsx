@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "كيف أساعد", href: "#how-i-work" },
-  { label: "المقالات", href: "#writing" },
-  { label: "يمان بوت", href: "#ask-ai" },
+  { label: "كيف اشتغل", href: "#how-i-work" },
+  { label: "كتب وأدوات", href: "#books-tools" },
+  { label: "اللقاءات", href: "#media" },
+  { label: "المدونة", href: "https://yaman.io" },
 ];
 
 export default function Navbar() {

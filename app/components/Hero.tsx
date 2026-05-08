@@ -91,17 +91,16 @@ export default function Hero() {
             {/* CTA */}
             <div className="stagger-item opacity-0 flex flex-col sm:flex-row items-start gap-4">
               <a
-                href="#ask-ai"
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-black text-white px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#222] transition-colors min-h-[44px]"
               >
-                <span>✦</span>
-                <span>كلّم يمان بوت</span>
+                <span>تواصل معي</span>
               </a>
               <a
                 href="#how-i-work"
                 className="inline-flex items-center gap-2 border border-[#E5E5E5] px-7 py-3.5 rounded-full font-medium text-base hover:bg-[#F5F5F5] transition-colors min-h-[44px]"
               >
-                <span>كيف أعمل</span>
+                <span>كيف أشتغل</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>

@@ -30,7 +30,7 @@ export default function Writing() {
     <Section id="writing" fullWidth ariaLabelledBy="writing-heading">
       <SectionHeader
         id="writing-heading"
-        title="المقالات"
+        title="تدوينات مفيدة للمؤسسين"
         action={
           <a
             href="https://yaman.io"
@@ -44,7 +44,6 @@ export default function Writing() {
             </svg>
           </a>
         }
-        eyebrow="تدوينات مفيدة للمؤسسين"
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5">
