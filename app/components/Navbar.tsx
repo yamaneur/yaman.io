@@ -30,11 +30,15 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
-          href="#"
-          className="font-serif-display font-black text-lg hover:opacity-70 transition-opacity"
+          href="/"
+          className="hover:opacity-80 transition-opacity flex items-center"
           aria-label="يمان العرضي - الرئيسية"
         >
-          يمان العرضي
+          <img
+            src="/images/yamaneur-logo.png"
+            alt="يمان العرضي"
+            style={{ height: 36, width: 36, objectFit: "contain", borderRadius: 8 }}
+          />
         </a>
 
         {/* Desktop Nav */}

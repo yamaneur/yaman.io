@@ -27,22 +27,20 @@ export default function Logos() {
           ))}
         </div>
 
-        {/* Mobile: RTL horizontally scrollable single row */}
-        <div
-          className="flex sm:hidden gap-8 overflow-x-auto pb-2"
-          dir="rtl"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {logos.map((logo) => (
-            <div key={logo.file} className="shrink-0">
-              <img
-                src={`/images/logos/individual/${logo.file}`}
-                alt={logo.alt}
-                loading="lazy"
-                className="h-12 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-200"
-              />
-            </div>
-          ))}
+        {/* Mobile: continuous auto-scrolling marquee */}
+        <div className="sm:hidden overflow-hidden">
+          <div className="flex animate-marquee">
+            {[...logos, ...logos].map((logo, i) => (
+              <div key={`${logo.file}-${i}`} className="shrink-0 px-6">
+                <img
+                  src={`/images/logos/individual/${logo.file}`}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="h-10 w-auto object-contain grayscale opacity-50"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
