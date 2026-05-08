@@ -74,12 +74,12 @@ export default function BooksAndTools() {
                   {item.type}
                 </span>
                 {item.soon && (
-                  <span className="inline-block text-xs font-bold bg-black text-white rounded-full px-3 py-1">
+                  <span
+                    className="animate-ripple inline-block text-xs font-medium rounded-full"
+                    style={{ background: "#F4D407", color: "#000", padding: "2px 10px", fontSize: 12 }}
+                  >
                     قريبًا
                   </span>
-                )}
-                {"publisher" in item && item.publisher && (
-                  <span className="text-xs text-[#BBB]">{item.publisher}</span>
                 )}
               </div>
               <h3 className="font-serif-display font-black text-xl leading-tight mb-2">

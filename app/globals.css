@@ -166,6 +166,20 @@ body {
   100% { transform: scale(1.7); opacity: 0; }
 }
 
+@keyframes ripple {
+  0%   { box-shadow: 0 0 0 0 rgba(244, 212, 7, 0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(244, 212, 7, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(244, 212, 7, 0); }
+}
+
+.animate-ripple {
+  animation: ripple 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ripple { animation: none; }
+}
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
