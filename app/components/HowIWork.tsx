@@ -40,6 +40,17 @@ const services = [
       </svg>
     ),
   },
+  {
+    id: "investment",
+    title: "الاستثمار",
+    description: "أستثمر مع مشاريع منتقاه بعناية أو أوصّلك بمستثمرين ملائكيين",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+        <polyline points="16 7 22 7 22 13"/>
+      </svg>
+    ),
+  },
 ];
 
 export default function HowIWork() {
@@ -50,7 +61,7 @@ export default function HowIWork() {
         title="كيف أساعد المؤسسين؟"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
         {services.map((service) => (
           <div
             key={service.id}
