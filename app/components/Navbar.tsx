@@ -35,7 +35,7 @@ export default function Navbar() {
           aria-label="يمان العرضي - الرئيسية"
         >
           <img
-            src="/images/yamaneur-logo.png"
+            src="/images/yamaneur-logo.svg"
             alt="يمان العرضي"
             style={{ height: 36, width: 36, objectFit: "contain", borderRadius: 8 }}
           />
