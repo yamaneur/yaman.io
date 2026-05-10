@@ -22,21 +22,21 @@ export default function Logos() {
               src={`/images/logos/individual/${logo.file}`}
               alt={logo.alt}
               loading="lazy"
-              className="h-12 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-200"
+              className="h-12 w-auto object-contain"
             />
           ))}
         </div>
 
-        {/* Mobile: continuous auto-scrolling marquee */}
-        <div className="sm:hidden overflow-hidden">
-          <div className="flex animate-marquee">
+        {/* Mobile: continuous auto-scrolling marquee (RTL) */}
+        <div className="sm:hidden overflow-hidden" style={{ direction: "rtl" }}>
+          <div className="flex animate-marquee-rtl">
             {[...logos, ...logos].map((logo, i) => (
               <div key={`${logo.file}-${i}`} className="shrink-0 px-6">
                 <img
                   src={`/images/logos/individual/${logo.file}`}
                   alt={logo.alt}
                   loading="lazy"
-                  className="h-10 w-auto object-contain grayscale opacity-50"
+                  className="h-10 w-auto object-contain"
                 />
               </div>
             ))}

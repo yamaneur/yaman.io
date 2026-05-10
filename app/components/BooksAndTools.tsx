@@ -45,7 +45,6 @@ export default function BooksAndTools() {
       <SectionHeader
         id="books-tools-heading"
         title="كتب وأدوات للمؤسسين"
-        description="ما أنتجته لمساعدة المؤسسين على التحقق من أفكارهم وبناء منتجاتهم بشكل أكثر ذكاءً."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5">

@@ -189,6 +189,24 @@ body {
   animation: marquee 18s linear infinite;
 }
 
+/* RTL marquee: content flows right → left (positive translateX moves right in RTL container) */
+@keyframes marquee-rtl {
+  from { transform: translateX(0); }
+  to   { transform: translateX(50%); }
+}
+
+.animate-marquee-rtl {
+  animation: marquee-rtl 18s linear infinite;
+}
+
+/* Hero CTA: RTL order on mobile so primary button appears on the right */
+@media (max-width: 639px) {
+  .hero-cta-container {
+    direction: rtl;
+    justify-content: flex-start !important;
+  }
+}
+
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f5f5f5; }

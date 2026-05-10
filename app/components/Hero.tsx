@@ -74,6 +74,15 @@ export default function Hero() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 sm:py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
+          {/* Mobile portrait — shown on mobile/tablet only */}
+          <div className="lg:hidden flex justify-center stagger-item opacity-0">
+            <img
+              src="/images/portrait2.jpg"
+              alt="يمان العرضي"
+              className="w-[120px] h-[120px] rounded-full object-cover border border-[#E5E5E5]"
+            />
+          </div>
+
           <div className="max-w-2xl space-y-8 lg:space-y-10">
             {/* Name */}
             <h1
@@ -84,12 +93,12 @@ export default function Hero() {
             </h1>
 
             {/* POV Line */}
-            <p className="stagger-item opacity-0 font-serif-display font-bold text-xl sm:text-2xl lg:text-3xl text-[#222] leading-[1.5] text-right sm:text-start">
+            <p className="stagger-item opacity-0 font-serif-display font-bold text-[14px] sm:text-2xl lg:text-3xl text-[#222] leading-[1.5] text-right sm:text-start whitespace-nowrap sm:whitespace-normal">
               أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل
             </p>
 
             {/* CTA */}
-            <div className="stagger-item opacity-0 flex flex-row items-center gap-2 sm:gap-4 justify-end sm:justify-start">
+            <div className="hero-cta-container stagger-item opacity-0 flex flex-row items-center gap-2 sm:gap-4 justify-end sm:justify-start">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-black text-white px-4 py-2.5 sm:px-7 sm:py-3.5 rounded-full font-medium text-sm sm:text-base hover:bg-[#222] transition-colors min-h-[44px] whitespace-nowrap"
