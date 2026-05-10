@@ -4,9 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "يمان العرضي",
   icons: {
-    icon: "/images/icon.png",
-    apple: "/images/icon.png",
-    shortcut: "/images/icon.png",
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/icon.png", type: "image/png" }],
+    shortcut: "/icon.png",
   },
   description:
     "يمان العرضي — شريك استراتيجي لمؤسسي ما قبل التمويل. يجمع بين التفكير في التحقق من الفكرة والوصول المباشر إلى الشبكة الصحيحة في السعودية والخليج",
@@ -32,8 +32,8 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className="h-full scroll-smooth">
       <head>
-        <link rel="icon" href="/images/icon.png" />
-        <link rel="apple-touch-icon" href="/images/icon.png" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="alternate" hrefLang="ar" href="https://yaman.io/" />
         <link rel="alternate" hrefLang="x-default" href="https://yaman.io/" />
         <script
