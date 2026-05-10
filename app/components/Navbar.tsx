@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useChatPopup } from "./ChatContext";
 
 const navLinks = [
   { label: "كيف أشتغل", href: "#how-i-work" },
@@ -12,6 +13,7 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { toggle: toggleChat } = useChatPopup();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -53,15 +55,15 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <a
-          href="#ask-ai"
+        <button
+          onClick={toggleChat}
           className="hidden md:inline-flex items-center gap-2 bg-black text-white px-5 py-2 text-sm font-medium rounded-full hover:bg-[#333] transition-colors min-h-[44px]"
         >
           <span>يمان بوت</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
-        </a>
+        </button>
 
         {/* Hamburger */}
         <button
@@ -91,16 +93,15 @@ export default function Navbar() {
             </li>
           ))}
           <li className="pt-2">
-            <a
-              href="#ask-ai"
-              onClick={closeMenu}
-              className="block w-full text-center bg-black text-white py-3 rounded-full font-medium text-sm min-h-[44px] flex items-center justify-center gap-2"
+            <button
+              onClick={() => { closeMenu(); toggleChat(); }}
+              className="w-full text-center bg-black text-white py-3 rounded-full font-medium text-sm min-h-[44px] flex items-center justify-center gap-2"
             >
               <span>يمان بوت</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="rotate-180" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </div>

@@ -9,10 +9,12 @@ import Workshops from "./components/Workshops";
 import Contact from "./components/Contact";
 import FloatingChat from "./components/FloatingChat";
 import Footer from "./components/Footer";
+import { ChatProvider } from "./components/ChatContext";
+import ChatPopup from "./components/ChatPopup";
 
 export default function Home() {
   return (
-    <>
+    <ChatProvider>
       <Navbar />
       <main>
         <Hero />
@@ -26,6 +28,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingChat />
-    </>
+      <ChatPopup />
+    </ChatProvider>
   );
 }
