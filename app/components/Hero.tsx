@@ -93,7 +93,7 @@ export default function Hero() {
             </h1>
 
             {/* POV Line */}
-            <p className="stagger-item opacity-0 font-serif-display font-bold text-[14px] sm:text-2xl lg:text-3xl text-[#222] leading-[1.5] text-right sm:text-start whitespace-nowrap sm:whitespace-normal">
+            <p className="stagger-item opacity-0 font-serif-display font-bold text-[15px] sm:text-2xl lg:text-3xl text-[#222] leading-[1.5] text-right sm:text-start whitespace-nowrap sm:whitespace-normal">
               أساعد المؤسسين يختبروا السوق ويوصلوا للعملاء الأوائل
             </p>
 
