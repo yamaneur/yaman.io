@@ -75,7 +75,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 sm:py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
           {/* Mobile portrait — shown on mobile/tablet only */}
-          <div className="lg:hidden flex justify-end stagger-item opacity-0">
+          <div className="lg:hidden flex justify-start stagger-item opacity-0">
             <img
               src="/images/portrait2.jpg"
               alt="يمان العرضي"
